@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+
+  <body>
+      <div class="menu">
+          <header>
+            <div class="container-header">
+              <h2>
+                <a href="index.html" class="active2">
+                  SkillSwap
+                  </a>
+              </h2>
+  
+              <nav id="nav">
+                <li>
+                  <a href="index.html" class="active">
+                    Menu
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Perfil
+                  </a>
+                </li>
+              </nav>
+              <div class="search-container">
+                <input pattern="[A-Za-z0-9]+" placeholder="Procurar..." />
+                <button>
+                  Pesquisar
+                </button>
+              </div>
+              <nav id="nav2">
+                <li>
+                  <a id="cadastro" href="cadastro.html" style="color: #094583;" >
+                    Cadastre-se
+                  </a>
+                </li>
+                <li>
+                  <a id="login" href="login.html"  >
+                   Entrar
+                  </a>
+                </li>
+              </nav>
+  
+  
+  
+              <div class="mobile-menu">
+                <img id="burguer" onclick="clickMenu()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png" alt="close-icon" style="filter: invert();" />
+              </div>
+              <nav id="nav3" style="background-color: aliceblue; margin-top: 10px;">
+                <li class="li3">
+                  <a href="index.html" class="active3" style="color: #094583;">
+                    Menu
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Perfil
+                  </a>
+                </li>
+                <li>
+                  <a id="cadastro3" href="cadastro.html" >
+                    Cadastre-se
+                  </a>
+                </li>
+                <li>
+                  <a id="cadastro3" href="login.html" >
+                    Entrar
+                  </a>
+                </li>
+              </nav>
+            </div>
+          </header>
+  
+        </div>
+      <main>
+          <div id="left">
+              <h1>Faça seu cadastro</h1>
+              <img src="" alt="">
+          </div>
+          <div id="right">
+              <div class="card_login">
+                  <h2 class="login">Cadastre-se</h2>
+                  <div class="campo">
+                      <label for="usuario">E-mail</label>
+                      <input type="text" skill exchangename="usuario" placeholder="user@email.com">
+                  </div>
+                  <div class="campo">
+                      <label for="usuario">Usuário</label>
+                      <input type="text" name="usuario" placeholder="user">
+                  </div>
+                  <div class="campo">
+                      <label for="usuario">Senha</label>
+                      <input type="password" name="usuario" pattern="{8,}" placeholder="senha123">
+                  </div>
+                  <div class="campo">
+                      <label for="usuario">Confirme sua senha</label>
+                      <input type="password" name="usuario" placeholder="senha123">
+                  </div>
+                  <button class="botao_entrar" style="padding:12px 0px; position: relative; "> <img src="imagens/google.png" alt="" width="25px" style="float: left; margin-left: 15px;"><p style="
+                    margin-top: 1px;
+                    text-align: center;
+                    border: none;
+                    box-shadow: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    background-color: transparent;">Entre com sua conta Google</p></button>
+                  <button class="botao_entrar">Criar conta</button>
+              </div>
+          </div>
+      </main>
+  </body>
+  <script src="script.js"></script>
+
+<!-- <script>
+  function clickMenu(){
+    if(nav.style.display == 'block'){
+      nav.style.display = 'none'
+    } else{
+      nav.style.display = 'block'
+    }
+  }
+  function clickMenu(){
+    if(nav3.style.display == 'block' ){
+      nav3.style.display = 'none'
+    } else{
+      nav3.style.display = 'block'
+    }
+  }
+</script> -->
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenWeather_API</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="author" content="Jean William Rauta">
+    <meta name="keywords" content="temperatura, cidade, estado, calor, frio, chuva, agua, nuvens, humidade, umidade, solo">
+    <meta name="description" content="Site para ver a temperatura, humidade, entre dados">
+</head>
+<body>
+
+
+    <main>
+
+    <!-- informações --------------------------------------------- -->
+
+        <div class="info">
+            <h1 id="city">
+                None
+            </h1>
+            <small id="latlon">lat: 0000 lon: 000</small>
+            <hr>
+            <time id="horario">12:00:00</time>
+            <div id="data" class="data">
+                <script>
+                    date = new Date();
+                    ano = date.getFullYear();
+                    mes = date.getMonth() + 1;
+                    dia = date.getDate();
+                    document.getElementById("data").innerHTML = `${dia}/${mes}/${ano}`
+                </script>
+            </div>
+            <hr class="hr">
+        </div>
+
+    <!-- ---------------------------------------------------------- -->
+
+    <!-- Grupo-flex ----------------------------------------------- -->
+
+        <div class="grupo">
+            <div class="grupo-flex">
+                <div id="div-img">
+                    <img alt="icone correspondente ao clima " src="../icons/unknown(1).png" alt="">
+                </div>
+                <div id="temp">00</div>
+                <div class="conteiner">
+                    <div class="mudar-temp" style="cursor: pointer;">
+                        <button style="color: #ffffff;" id="celsius-button" onclick="Temperature('f')" >°C</button>
+                        <span class="linha">|</span>
+                        <button style="color: #ffffff63;" id="fahrenheit-button" onclick="Temperature('c')">°F</button>
+                      </div>
+                </div>
+            </div>
+            <hr class="hrr">
+                <!-- ---------------------------------------------------------------- -->
+            
+                <!-- info-clima ----------------------------------------------------------- -->
+            
+            <div class="info-clima">
+                <div id="humid">none none</div>
+                <div id="speed">none none</div>
+                <div id="clima">none none</div>
+            </div>
+        </div>
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <!-- input-grupo----------------------------------------------------- -->
+
+        <div class="input-grupo">
+            <input type="text" id="input" placeholder="Digite o nome da cidade">
+            <div class="input-group-append">
+              <button class="btn button " style="vertical-align:middle"> Pesquisar </button>
+            </div>
+        </div>
+        <small class="smal">
+            ex: Taquara,RS,BR
+        </small>
+
+    <!-- ----------------------------------------------------------------- -->
+
+    </main>
+    <footer>
+        <p class="API">Site criado com </p>
+        <a href="https://openweathermap.org/" target="_blank"><img id="teste" onmouseover="mouseover()" onmouseout="mouseout()" src="../icons/teste01t.png" alt=""></a>
+        <p class="API1">por <a target="_blank" href="https://github.com/JeanRauta"><span class="span1">Jean William Rauta</span></a></p>
+    </footer>
+    
+<script src="script.js"></script>
+</body>
+</html>

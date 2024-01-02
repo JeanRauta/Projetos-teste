@@ -1,0 +1,132 @@
+main{
+    width: 100vw;
+    display: flex;
+}
+.side1{
+    width: 50vw;
+    height: 100vh;
+    background-color: #f1e5e128;
+    border-radius: 0px 0px 40px 0px;
+    margin-top: -8px;
+}
+.side2{
+  background-color: #E7BFB2;
+  width: 50vw;
+  margin-top: 33px;
+  height: 816px;
+  border-radius: 40px 0px 0px 40px;
+  box-shadow: -6px 6px #e9d3cccc;
+}
+.pre1{
+    font-size: 130px;
+    margin-top: 27vh;
+    margin-left: 25%;
+    line-height: 90px;
+    color: #E1BAAE;
+}
+.side2 > img{
+  width: 702px;
+  margin-top: 60px;
+  margin-left: 115px;
+}
+.text1{
+    color: #E1BAAE;
+    font-size: 40px ;
+    line-height: 40px;
+    margin-left: 25%;
+    margin-top: -60px;
+}
+  
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    width: 226px;
+    height: 52px;
+    font-size: 34px;
+    letter-spacing: 2.5px;
+    color: #00000057;
+    background-color: #e1baae1e;
+    border: none;
+    border-radius: 45px;
+    top: 73vh;
+    left: 12.5vw;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.281);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+}
+  
+  .button:hover {
+    background-color: #e1baaee0;
+    box-shadow: 0px 15px 20px #e1baaea2;
+    color: #fff;
+    transform: translateY(-7px);
+    scale: 110%;
+  }
+  
+  
+  @media screen and (max-width: 1360px) {
+
+    .side2 {
+      background-color: #E7BFB2;
+      width: 50vw;
+      margin-top: 9px;
+      height: 478px;
+      border-radius: 22px 0px 0px 22px;
+      box-shadow: -6px 6px #e9d3cccc;
+  }
+
+
+
+    .side1 {
+      width: 50vw;
+      height: 73vh;
+      background-color: #f1e5e128;
+      border-radius: 0px 0px 40px 0px;
+      margin-top: -8px;
+  }
+  .side2 > img {
+    width: 432px;
+    margin-top: 24px;
+    margin-left: 100px;
+}
+
+    .pre1 {
+      font-size: 113px;
+      margin-top: 15vh;
+      margin-left: 18%;
+      line-height: 74px;
+      color: #E1BAAE;
+    }
+
+    .text1 {
+      color: #E1BAAE;
+      font-size: 28px;
+      line-height: 40px;
+      margin-left: 20%;
+      margin-top: -72px;
+    }
+
+    .button {
+      width: 182px;
+      height: 42px;
+      font-size: 27px;
+      letter-spacing: 1.5px;
+      color: #00000057;
+      background-color: #e1baae1e;
+      border: none;
+      border-radius: 45px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.281);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      outline: none;
+      position: absolute;
+      top: 54vh;
+      left: 9.9vw;
+  }
+  }

@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* variaveis */
+:root{
+    --font_do_texto: cursive;
+    --espaço_entre_linhas: 2em;
+    --fundo_font: rgba(0, 0, 0, 0.596);
+}
+
+/* -------------------------------------- */
+/* configuração raiz */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* -------------------------------------- */
+/* configuração do header */
+header{
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    font-size: 87px;
+    font-family: var(--font_do_texto);
+    font-weight: 500;
+}
+header > p{
+    font-size: larger;
+    font-family: var(--font_do_texto);
+}
+header > p > a{
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+}
+header > p > a:hover{
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 8px;
+    padding: 0px 2px;
+    transition: 0.4s;
+}
+
+/* -------------------------------------- */
+/* configuração do conteudo main */
+section{
+    font-family: var(--font_do_texto);
+    font-size: xx-large;
+    font-weight: bolder;
+    line-height: var(--espaço_entre_linhas);
+    text-align: left;
+    font-style: italic;
+}
+section > p{
+    padding-left: 34px;
+    padding-top: 10vh;
+    padding-bottom:4vh ;
+}
+section.duas > p{
+    padding-left: 34px;
+    padding-top: 2vh;
+    padding-bottom:5vh ;
+}
+
+/* -------------------------------------- */
+/* configuração do texto nas imagens */
+#mark{
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    display: inline-block;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 20px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.411);
+}
+
+/* -------------------------------------- */
+/* configuração das imagens */
+.imagem{
+    background: black url(imagens/444.jpg) center center no-repeat fixed;
+    background-size: cover;
+    margin-bottom: 58px;
+    margin-top: 48px;
+    box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.205);
+}
+.imagem#img2{
+    background: black url(imagens/1234.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+/* -------------------------------------- */
+/* configurações do footer */
+footer{
+    background-color: black;
+    position: sticky;
+    bottom: 0px;
+    text-align: center;
+}
+#config_do_footer{
+    color: white;
+    font-weight: bold;
+    font-size:medium ;
+    padding: 2px;
+}
+mark{
+    background-color: rgb(255, 255, 255);
+}
+mark:hover{
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 8px;
+    padding: 0px 2px;
+    transition: 0.4s;
+    color: aliceblue;
+}

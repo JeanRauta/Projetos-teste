@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+
+footer{
+    background-color: #0D3A32;
+    box-shadow: inset 15px 15px 30px rgba(0, 0, 0, 0.397);
+    color: white;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;}
+
+.footer{
+    display: flex;
+}
+
+.mapa{
+    width: 33.33%;
+    height: 400px;
+    text-align: center;
+    margin-left: 30px;
+}
+.mapa1 {
+    background-color: aliceblue;
+    width: 320px;
+    margin-left: 152px;
+    margin-top: -10px;
+    border-radius: 0px 0px 20px 20px;
+}
+.mapa > .mapa1 > h2{
+   color: #0D3A32;
+   font-weight: 100;
+}
+.mapa > .mapa1 > p{
+    color: #0D3A32;
+    font-weight: 100;
+    line-height: 12px;
+    text-align: center;
+  padding: 5px 0px;
+ }
+ .mapa > .mapa1 > .hora{
+    margin-top: 10px;
+    padding-bottom: 10px;
+ }
+.meio{
+    width: 33.33%;
+    height: 400px;
+    text-align: center;
+    
+}
+.meio > h1 {
+    font-size: 50px;
+    font-weight: 100;
+    margin: auto;
+    margin-top: 75px;
+}
+.meio > h2 {
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: 100;
+    margin: auto;
+}
+.meio > h4 {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 100;
+    margin: auto;
+}
+.redes{
+    width: 33.33%;
+    height: 400px;
+    text-align: center;
+}
+.insta {
+    height: 100px;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    margin-top: 44px;
+}
+.insta > img {
+    width: 90px;
+    height: 90px;
+    filter: invert();
+}
+.insta > p {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 35px;
+    margin-top: 26px;
+}
+.tele {
+    display: flex;
+    margin-left: 176px;
+    margin-top: 20px;
+}
+.tele > img {
+    width: 85px;
+    height: 85px;
+    filter: invert();
+}
+.tele > p {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 35px;
+    margin-top: 26px;
+}
+.email {
+    display: flex;
+    margin-left: 180px;
+    margin-top: 30px;
+}
+.email > img {
+    width: 85px;
+    height: 85px;
+    filter: invert();
+}
+.email > p {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 35px;
+    margin-top: 26px;
+}
+
+@media screen and (max-width: 1360px) {
+
+    footer{
+        background-color: #0D3A32;
+        box-shadow: inset 15px 15px 30px rgba(0, 0, 0, 0.397);
+        color: white;
+        font-weight: 100;
+    }
+
+    .footer{
+        display: flex;
+    }
+    
+    .mapa{
+        width: 33.33%;
+        height: 350px;
+        text-align: center;
+    }
+    .meio{
+        width: 33.33%;
+        height: 350px;
+        text-align: center;
+    }
+    .meio > h1 {
+        font-size: 30px;
+        font-weight: 100;
+        margin: auto;
+        margin-top: 75px;
+    }
+    .meio > h2 {
+        margin-top: 60px;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .meio > h4 {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .redes{
+        width: 33.33%;
+        height: 350px;
+        text-align: center;
+    }
+    .insta {
+        height: 100px;
+        width: 300px;
+        margin: auto;
+        display: flex;
+        margin-top: 30px;
+    }
+    .insta > img {
+        width: 70px;
+        height: 70px;
+        filter: invert();
+    }
+    .insta > p {
+        text-align: right;
+        margin-right: 20px;
+        font-size: 25px;
+        margin-top: 26px;
+    }
+    .tele {
+        display: flex;
+        margin-left: 66px;
+        margin-top: 1px;
+    }
+    .tele > img {
+        width: 66px;
+        height: 66px;
+        filter: invert();
+    }
+    .tele > p {
+        text-align: right;
+        margin-right: 20px;
+        font-size: 25px;
+        margin-top: 26px;
+    }
+    .email {
+        display: flex;
+        margin-left: 68px;
+        margin-top: 30px;
+    }
+    .email > img {
+        width: 70px;
+        height: 70px;
+        filter: invert();
+    }
+    .email > p {
+        text-align: right;
+        margin-right: 20px;
+        font-size: 25px;
+        margin-top: 26px;
+    }
+}

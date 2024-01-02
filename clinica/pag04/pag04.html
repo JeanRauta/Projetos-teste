@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../rootcss/footer.css">
+    <link rel="stylesheet" href="../rootcss/header.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+      </style>
+      <style>
+        *{
+            font-weight: 100;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1500px;
+            margin: 20px auto;
+            background-color: #e1baae57;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 180px; 
+            margin-bottom: 100px; 
+        }
+       
+        .testehr{
+            margin-top: -20px;
+        }
+        .comment {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .comment:last-child {
+            border-bottom: none;
+        }
+        .author {
+            font-weight: 100;
+            font-size: 30px;
+        }
+        .timestamp {
+            font-size: 20px;
+            color: #666;
+        }
+        .content {
+            margin-top: 5px;
+            font-size: 27px;
+        }
+        .input-group {
+            margin-top: 20px;
+        }
+        .input-group label {
+    display: block;
+    font-size: 32px;
+    font-weight: 100;
+}
+.input-group input[type="text"], .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 28px;
+    line-height: 20px;
+    width: 99%;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="abs">
+            <a class="logo-header"  href="../pag01/index.html">
+                <img class="img1" src="../imagens/logoLucidus.png" alt="teste de imgem do logo">
+            </a>
+        </div>
+    </header>
+    
+    <nav class="menu">
+    
+        <ul class="menu-nav">
+            <a href="#">
+                <li class="li1 lid" type="none">Sobre</li>
+            </a>
+            <a href="../pag02/profissionais.html">
+                <li class="li1 lid" type="none">Profissionais</li>
+            </a>
+            <a href="../pag03/pag03.html">
+                <li class="li1 lid" type="none">Artigos</li>
+            </a>
+            <a href="../cadastro/cadastro.html">
+                <li  class="li1 lid li2" type="none">Meu Lucidus</li>
+            </a>
+        </ul>
+    </nav>
+
+    
+
+    <div class="cont1" >
+        <div class="cont2" style="margin-top: 50px;">
+            <h3 class="h">Transtornos de ansiedade em jovens:</h3>
+            <p class="p">Tem sido observado um aumento nos transtornos de ansiedade entre os jovens. Explorar as causas e as estratégias de manejo é importante para compreender e abordar essa preocupante tendência.</p>
+            <img src="../imagens/image-removebg-preview (4).png" alt="">
+            <img src="../imagens/Vector.png" style="float: right; margin-right: 20px; margin-top: 10px;" alt="">
+        </div>
+        <img src="../imagens/n1.1.png" style="width: 100vw; margin-top: 50px;" alt="">
+    </div>
+    <h4 style="font-size: 40px; text-align: center; margin-top: 100px; margin-bottom: 30px">Desafios Crescentes: O Aumento dos Transtornos de Ansiedade entre os Jovens</h4>
+    <p class="p" style="text-align: justify; margin-right: 100px; margin-left: 100px;">Nos últimos anos, tem havido um aumento alarmante nos transtornos de ansiedade entre os jovens, impulsionado por uma combinação de fatores como pressões acadêmicas intensas, influência das redes sociais, desafios socioeconômicos e falta de habilidades de enfrentamento adequadas. Essa tendência é agravada pelas mudanças hormonais e neurológicas da adolescência. Para enfrentar esse cenário, é fundamental promover a conscientização sobre saúde mental, oferecer suporte profissional acessível e criar ambientes que valorizem o bem-estar emocional, ao invés de somente focar em conquistas externas.</p>
+    <div class="container">
+        <h2 style="
+            font-size: 55px;
+            margin-bottom: 0px;
+        ">Comentários</h2>
+        <hr class="testehr">
+        <div class="comment">
+            <div class="author">Usuário 1</div>
+            <div class="timestamp">8 de Agosto, 2023</div>
+            <div class="content">Ótimo artigo! Muito informativo.</div>
+        </div>
+        <div class="comment">
+            <div class="author">Usuário 2</div>
+            <div class="timestamp">9 de Agosto, 2023</div>
+            <div class="content">Gostei bastante, continue assim!</div>
+        </div>
+        <div class="input-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Seu nome">
+        </div>
+        <div class="input-group">
+            <label for="comentario">Comentário:</label>
+            <textarea id="comentario" placeholder="Digite seu comentário"></textarea>
+        </div>
+        <button class="testedecom" onclick="adicionarComentario()">Adicionar Comentário</button>
+    </div>
+
+    <script>
+        function adicionarComentario() {
+            var nome = document.getElementById("nome").value;
+            if (nome === ''){
+                nome = 'Anónimo'
+            }
+            var comentario = document.getElementById("comentario").value;
+            var agora = new Date();
+            var timestamp = agora.getDate() + ' de ' + (agora.getMonth()+1) + ', ' + agora.getFullYear();
+            
+            var novoComentario = `
+                <div class="comment">
+                    <div class="author">${nome}</div>
+                    <div class="timestamp">${timestamp}</div>
+                    <div class="content">${comentario}</div>
+                </div>
+            `;
+
+            document.querySelector(".container").insertAdjacentHTML('beforeend', novoComentario);
+            document.getElementById("nome").value = "";
+            document.getElementById("comentario").value = "";
+        }
+    </script>
+    <footer>
+        <div class="footer">
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27741.714530075882!2d-51.014351597843024!3d-29.641039608433154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95193ff993e686f9%3A0xcee86e140fc0245e!2sHospital%20Sapiranga!5e0!3m2!1spt-BR!2sbr!4v1691331257810!5m2!1spt-BR!2sbr" width="320" height="300" style="border:0; border-radius: 20px  20px 20px 20px; margin-top: 55px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
+            </div>
+            <div class="meio">
+                <div style="
+                display: flex;
+                margin: auto;
+                margin-left: 229px;
+                margin-top: 70px;">
+                    <img style="width: 70px;" src="../imagens/logoLucidusBranco.svg" alt="">
+                    <h1 style="padding-top: 10px;" class="nome">Lucidus</h1>
+                </div >
+                <h2 class="nomec">Lucidus Clínica Terapêltica</h2>
+                <h4 class="nomecr">@2023 Lucidus Clínica Terapêltica</h4>
+            </div>
+            <div class="redes">
+                <div class="insta">
+                    <img src="../imagens/image-removebg-preview (1).png" alt="">
+                    <p>@Lucidus_clinic</p>
+                </div>
+                <div class="tele">
+                    <img src="../imagens/image-removebg-preview (2).png" alt="">
+                    <p>(55) 98935-4332</p>
+                </div>
+                <div class="email">
+                    <img src="../imagens/image-removebg-preview (3).png" alt="">
+                    <p>LucidusClinic@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

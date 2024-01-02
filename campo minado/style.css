@@ -1,0 +1,96 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Jua&family=Luckiest+Guy&display=swap');
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Luckiest Guy', cursive;
+    
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #e1e9df;
+}
+  h1 {
+    font-family: 'Jua', sans-serif;
+      text-align: center;
+      text-transform: capitalize;
+      font-variant: small-caps;
+      font-size: 35px;
+      margin-top: -40px;
+      margin-bottom: 50px;
+  }
+  div {
+      text-align: center;
+  }
+  table {   
+      margin: 1em auto;
+      border-collapse: collapse;
+  }
+  td {
+      width: 45px;
+      height: 45px;
+      text-align: center;
+      background-color: #e3c39e ; 
+      font-family:'Arial Narrow Bold', sans-serif;
+      font-weight: 900;
+  }
+  tr:nth-child(odd) td:nth-child(even){
+    background-color: #d9b79a ; 
+  }
+  tr:nth-child(even) td:nth-child(odd){
+    background-color: #d9b79a ; 
+  }
+  table tr:nth-child(odd) td.blocked:nth-child(even) {
+    background: #aad751;
+  }
+  table tr:nth-child(even) td.blocked:nth-child(odd) {
+    background: #aad751;
+  }
+  .blocked {
+    background: #a5d14c;
+    transition: 0.4s;
+  }
+  .blocked:hover {
+    transform:scale(108%);
+    outline: 1px solid rgba(0, 0, 0, 0.295);
+    transition: 0.4s;
+    border: none;
+    border-radius: 0px 0px 0px 0px;
+  }
+  .flag{
+    cursor: default;
+  }
+  .n1 {
+      color: blue;
+  }
+  .n2 {
+      color: green;
+  }
+  .n3 {
+      color: red;
+  }
+  .n4 {
+      color: maroon;
+  }
+  .n5 {
+      color: blueviolet;
+  }
+  .n6 {
+      color: darkgoldenrod;
+  }
+  .n7 {
+      color: orange;
+  }
+  .n8 {
+      color: tomato;
+  }
+  label{
+    font-size: 20px;
+    font-variant: small-caps;
+  }

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 100;
+}
+body{
+    overflow-x: hidden;
+}
+
+.input1 {
+    height: 56px;
+    width: 700px;
+    margin: 76px 0px 58px 32%;
+    border-radius: 30px 30px 30px 30px;
+    font-size: xx-large;
+    padding-left: 25px;
+    padding-top: 5px;
+    border: 1px solid #e1baae6e;
+    outline: none;
+    color: #e1baae;
+}
+.input1::placeholder{
+    color: #e1baae8a;
+}
+
+.text{
+    display: block;
+    width: 950px;
+    margin: 100px -2px 0px 82px;
+}
+.text1{
+    display: block;
+    width: 950px;
+    margin: 100px -2px 0px 82px;
+}
+.left{
+    display: flex;
+    margin-top: 100px;
+   
+}
+.right{
+    display: flex;
+    height: 650px;
+    width: 100%;
+    margin-top: 100px;
+}
+.hl{
+    color: black;
+    font-size: 69px;
+    
+}
+.pl{
+    color: black;
+    font-size: xx-large;
+  
+}
+.hr{
+    color: black;
+    font-size: 69px;
+    margin-left: 62px;
+    margin-top: 30px;
+}
+.pr{
+    color: black;
+    margin-left: 67px;
+    font-size: xx-large;
+}
+
+.wrap1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button1 {
+    width: 226px;
+    height: 52px;
+    font-size: 34px;
+    letter-spacing: 2.5px;
+    color: #00000057;
+    background-color: #e1baae1e;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.281);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 60px;
+    margin-bottom: 140px;
+    margin-left: -478px;
+    position: absolute;
+}
+  
+  .button1:hover {
+    background-color: #e1baaee0;
+    box-shadow: 0px 15px 20px #e1baaea2;
+    color: #fff;
+    transform: translateY(-7px);
+    scale: 110%;
+  }
+.wrap2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button2 {
+    width: 226px;
+    height: 52px;
+    font-size: 34px;
+    letter-spacing: 2.5px;
+    color: #00000057;
+    background-color: #e1baae1e;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.281);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 60px;
+    margin-bottom: 140px;
+    margin-left: -63%;
+}
+  
+  .button2:hover {
+    background-color: #e1baaee0;
+    box-shadow: 0px 15px 20px #e1baaea2;
+    color: #fff;
+    transform: translateY(-7px);
+    scale: 110%;
+  }
